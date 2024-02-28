@@ -322,12 +322,12 @@ header .container {
 }
 
 header .container div {
-	margin-left: auto;
+	/* margin-left: auto; */
 	display: -webkit-flex;
 	ALIGN-ITEMs: center;
 	display: flex;
 	position: relative;
-	margin-right: auto
+	/* margin-right: auto */
 }
 
 .joyl2 {
@@ -1327,6 +1327,7 @@ h3 {
 /* games */
 .games {
 	padding: 30px 0;
+	width: 100%;
 }
 
 .games__list {
@@ -1355,3 +1356,123 @@ h3 {
 }
 
 /* games */
+
+/* header	 */
+.header {
+	height: auto;
+}
+
+.header {
+	background: #111112;
+	margin-bottom: 20px;
+}
+
+.header__columns {
+	margin-right: 0;
+	margin-left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.header__burger {
+	flex: 0 0 40px;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	position: relative;
+	background: linear-gradient(180deg, #2c2e35, #1b1d21);
+}
+
+.header__burger::after {
+	content: '';
+	position: absolute;
+	top: 11px;
+	left: 7.5px;
+	width: 25px;
+	height: 2px;
+	background: #fff;
+}
+
+.header__burger::before {
+	content: '';
+	position: absolute;
+	bottom: 11px;
+	left: 7.5px;
+	width: 25px;
+	height: 2px;
+	background: #fff;
+}
+
+.header__burger span {
+	content: '';
+	position: absolute;
+	top: 50%;
+	margin-top: -0.5px;
+	left: 7.5px;
+	width: 25px;
+	height: 2px;
+	background: #fff;
+}
+
+.header__list {
+	display: flex;
+	align-items: center;
+}
+
+.header__item {
+	margin-right: 25px;
+}
+
+.header__link {
+	font-size: 20px;
+}
+
+.header__logo {}
+
+.header__btns {}
+
+.header__btn {}
+
+.header__btn_reg {
+	background: linear-gradient(98.32deg, #815516 -2%, #ffcb51 54.7%, #c98217 107.96%);
+	font-size: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	border-radius: 15px;
+	padding: 10px 20px;
+	color: #000;
+	line-height: 1;
+	font-weight: 700;
+	margin-right: 20px;
+}
+
+.header__btn_in {
+	background: linear-gradient(98.58deg, #a4bbc2 .36%, #e3f8ff 53.96%, #a4bbc2 104.31%);
+	font-size: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	border-radius: 15px;
+	padding: 10px 20px;
+	color: #000;
+	line-height: 1;
+	font-weight: 700;
+}
+
+@media (max-width: 1000px) {
+	.header {
+		display: block;
+	}
+
+	header div.header__list {
+		display: none;
+	}
+}
+
+
+/* header	 */

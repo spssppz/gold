@@ -401,12 +401,12 @@
 		}
 
 		header .container div {
-			margin-left: auto;
+			/* margin-left: auto; */
 			display: -webkit-flex;
 			ALIGN-ITEMs: center;
 			display: flex;
 			position: relative;
-			margin-right: auto
+			/* margin-right: auto */
 		}
 
 		.joyl2 {
@@ -1406,6 +1406,7 @@
 		/* games */
 		.games {
 			padding: 30px 0;
+			width: 100%;
 		}
 
 		.games__list {
@@ -1434,49 +1435,157 @@
 		}
 
 		/* games */
+
+		/* header	 */
+		.header {
+			height: auto;
+		}
+
+		.header {
+			background: #111112;
+			margin-bottom: 20px;
+		}
+
+		.header__columns {
+			margin-right: 0;
+			margin-left: 0;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			width: 100%;
+		}
+
+		.header__burger {
+			flex: 0 0 40px;
+			border-radius: 50%;
+			width: 40px;
+			height: 40px;
+			position: relative;
+			background: linear-gradient(180deg, #2c2e35, #1b1d21);
+		}
+
+		.header__burger::after {
+			content: '';
+			position: absolute;
+			top: 11px;
+			left: 7.5px;
+			width: 25px;
+			height: 2px;
+			background: #fff;
+		}
+
+		.header__burger::before {
+			content: '';
+			position: absolute;
+			bottom: 11px;
+			left: 7.5px;
+			width: 25px;
+			height: 2px;
+			background: #fff;
+		}
+
+		.header__burger span {
+			content: '';
+			position: absolute;
+			top: 50%;
+			margin-top: -0.5px;
+			left: 7.5px;
+			width: 25px;
+			height: 2px;
+			background: #fff;
+		}
+
+		.header__list {
+			display: flex;
+			align-items: center;
+		}
+
+		.header__item {
+			margin-right: 25px;
+		}
+
+		.header__link {
+			font-size: 20px;
+		}
+
+		.header__logo {}
+
+		.header__btns {}
+
+		.header__btn {}
+
+		.header__btn_reg {
+			background: linear-gradient(98.32deg, #815516 -2%, #ffcb51 54.7%, #c98217 107.96%);
+			font-size: 20px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			border-radius: 15px;
+			padding: 10px 20px;
+			color: #000;
+			line-height: 1;
+			font-weight: 700;
+			margin-right: 20px;
+		}
+
+		.header__btn_in {
+			background: linear-gradient(98.58deg, #a4bbc2 .36%, #e3f8ff 53.96%, #a4bbc2 104.31%);
+			font-size: 20px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			border-radius: 15px;
+			padding: 10px 20px;
+			color: #000;
+			line-height: 1;
+			font-weight: 700;
+		}
+
+		@media (max-width: 1000px) {
+			.header {
+				display: block;
+			}
+
+			header div.header__list {
+				display: none;
+			}
+		}
+
+
+		/* header	 */
 	</style>
 </head>
 
 <body
 	class="home page-template page-template-main page-template-main-php page page-id-114 wp-embed-responsive singular image-filters-enabled">
-	<header>
+	<header class="header">
 		<div class="container">
-			<div class="men1">
-				<a href="" target="_blank"><img alt="" src='content/img/logo.png'></a>
-			</div>
-		</div>
-	</header>
-	<header class="mob">
-		<div class="container">
-			<div class="men1">
-				<a href="" target="_blank">
-					<img alt="" src='content/img/logo.png'></a>
-			</div>
-			<div class=" menn">
-				<a class="href" target="_blank" style="cursor:pointer">
-					<div class="men3">Вход</div>
+			<div class="header__columns">
+				<a class="header__burger" href=""><span></span></a>
+				<div class="header__list">
+					<li class="header__item">
+						<a class="header__link" href="">Игры</a>
+					</li>
+					<li class="header__item">
+						<a class="header__link" href="">Акции</a>
+					</li>
+					<li class="header__item">
+						<a class="header__link" href="">Бонусы</a>
+					</li>
+				</div>
+				<a class="header__logo" href="">
+					<img src="content/img/logo.png" alt="">
 				</a>
-				<a class="href" target="_blank" style="cursor:pointer">
-					<div class="men4">Игровые автоматы</div>
-				</a>
-				<a class="href" target="_blank" style="cursor:pointer">
-					<div class="men3">Регистрация</div>
-				</a>
+				<div class="header__btns">
+					<a class="header__btn header__btn_reg" href="">Регистрация</a>
+					<a class="header__btn header__btn_in" href="">Войти</a>
+				</div>
 			</div>
 		</div>
 	</header>
 	<div class="main">
-		<div class="joyl-slide">
-			<div class="jou-abs">
-				<div class="container">
-					<div class="main1"></div>
-				</div>
-			</div>
-			<a class="href"><img style="width:101%;margin-left:-1%;max-width:101%" class="nemob" src="content/img/ban.jpg"
-					alt="">
-				<img style="width:100%" class="mob" src="content/img/ban.jpg" alt="">
-			</a>
-		</div>
 		<div class="container">
 			<div class="error">
 				<h1 style="margin:0px;font-size:inherit">404</h1>
